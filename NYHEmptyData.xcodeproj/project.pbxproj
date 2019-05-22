@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46B61C9F2293D5E60017043D /* NYHBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B61C9E2293D5E60017043D /* NYHBaseController.m */; };
+		46B61CA22293D6010017043D /* NYHBaseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B61CA12293D6010017043D /* NYHBaseTableController.m */; };
+		46B61CA52293D80F0017043D /* NYHEmptyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B61CA42293D80F0017043D /* NYHEmptyController.m */; };
+		46B61CA92293F6020017043D /* NYHBaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B61CA72293F6020017043D /* NYHBaseTableCell.m */; };
+		46B61CAD2293F6270017043D /* NYHBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B61CAC2293F6270017043D /* NYHBaseModel.m */; };
+		46B61CAF2293F9000017043D /* NYHBaseTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B61CAE2293F9000017043D /* NYHBaseTableCell.xib */; };
+		46FCF1BD228E58D10059E2FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FCF1BC228E58D10059E2FC /* AppDelegate.m */; };
+		46FCF1C0228E58D10059E2FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FCF1BF228E58D10059E2FC /* ViewController.m */; };
+		46FCF1C3228E58D10059E2FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46FCF1C1228E58D10059E2FC /* Main.storyboard */; };
+		46FCF1C5228E58D30059E2FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46FCF1C4228E58D30059E2FC /* Assets.xcassets */; };
+		46FCF1C8228E58D30059E2FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46FCF1C6228E58D30059E2FC /* LaunchScreen.storyboard */; };
+		46FCF1CB228E58D30059E2FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FCF1CA228E58D30059E2FC /* main.m */; };
+		46FCF1D4228E606A0059E2FC /* UIScrollView+NYHEmptyDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FCF1D3228E606A0059E2FC /* UIScrollView+NYHEmptyDataView.m */; };
+		46FCF1D9228E8CF00059E2FC /* NYHListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FCF1D8228E8CF00059E2FC /* NYHListModel.m */; };
+		46FCF1DF228EA4BB0059E2FC /* NYHEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FCF1DE228EA4BB0059E2FC /* NYHEmptyView.m */; };
+		46FCF1E3228EA61C0059E2FC /* NYHResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 46FCF1E2228EA61C0059E2FC /* NYHResource.bundle */; };
+		D7191EC0E96477C2F4D2E59A /* libPods-NYHEmptyData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE3470832722E0003966B4E /* libPods-NYHEmptyData.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3AE3470832722E0003966B4E /* libPods-NYHEmptyData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NYHEmptyData.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46B61C9B22939BAC0017043D /* NYHEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYHEnum.h; sourceTree = "<group>"; };
+		46B61C9D2293D5E60017043D /* NYHBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYHBaseController.h; sourceTree = "<group>"; };
+		46B61C9E2293D5E60017043D /* NYHBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYHBaseController.m; sourceTree = "<group>"; };
+		46B61CA02293D6010017043D /* NYHBaseTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYHBaseTableController.h; sourceTree = "<group>"; };
+		46B61CA12293D6010017043D /* NYHBaseTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYHBaseTableController.m; sourceTree = "<group>"; };
+		46B61CA32293D80F0017043D /* NYHEmptyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYHEmptyController.h; sourceTree = "<group>"; };
+		46B61CA42293D80F0017043D /* NYHEmptyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYHEmptyController.m; sourceTree = "<group>"; };
+		46B61CA62293F6020017043D /* NYHBaseTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYHBaseTableCell.h; sourceTree = "<group>"; };
+		46B61CA72293F6020017043D /* NYHBaseTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYHBaseTableCell.m; sourceTree = "<group>"; };
+		46B61CAB2293F6270017043D /* NYHBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYHBaseModel.h; sourceTree = "<group>"; };
+		46B61CAC2293F6270017043D /* NYHBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYHBaseModel.m; sourceTree = "<group>"; };
+		46B61CAE2293F9000017043D /* NYHBaseTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NYHBaseTableCell.xib; sourceTree = "<group>"; };
+		46FCF1B8228E58D10059E2FC /* NYHEmptyData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYHEmptyData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46FCF1BB228E58D10059E2FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		46FCF1BC228E58D10059E2FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		46FCF1BE228E58D10059E2FC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		46FCF1BF228E58D10059E2FC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		46FCF1C2228E58D10059E2FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46FCF1C4228E58D30059E2FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46FCF1C7228E58D30059E2FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46FCF1C9228E58D30059E2FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46FCF1CA228E58D30059E2FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46FCF1D2228E606A0059E2FC /* UIScrollView+NYHEmptyDataView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+NYHEmptyDataView.h"; sourceTree = "<group>"; };
+		46FCF1D3228E606A0059E2FC /* UIScrollView+NYHEmptyDataView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+NYHEmptyDataView.m"; sourceTree = "<group>"; };
+		46FCF1D5228E60F80059E2FC /* NYHEmptyData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYHEmptyData.h; sourceTree = "<group>"; };
+		46FCF1D7228E8CF00059E2FC /* NYHListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYHListModel.h; sourceTree = "<group>"; };
+		46FCF1D8228E8CF00059E2FC /* NYHListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYHListModel.m; sourceTree = "<group>"; };
+		46FCF1DB228E957C0059E2FC /* NYHMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYHMacro.h; sourceTree = "<group>"; };
+		46FCF1DC228E96070059E2FC /* NYHPrefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYHPrefix.h; sourceTree = "<group>"; };
+		46FCF1DD228EA4BB0059E2FC /* NYHEmptyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYHEmptyView.h; sourceTree = "<group>"; };
+		46FCF1DE228EA4BB0059E2FC /* NYHEmptyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYHEmptyView.m; sourceTree = "<group>"; };
+		46FCF1E2228EA61C0059E2FC /* NYHResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NYHResource.bundle; sourceTree = "<group>"; };
+		471466E2FAAECD8587BDA0D4 /* Pods-NYHEmptyData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYHEmptyData.release.xcconfig"; path = "Target Support Files/Pods-NYHEmptyData/Pods-NYHEmptyData.release.xcconfig"; sourceTree = "<group>"; };
+		ECD3079A7927C0E14446D268 /* Pods-NYHEmptyData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYHEmptyData.debug.xcconfig"; path = "Target Support Files/Pods-NYHEmptyData/Pods-NYHEmptyData.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46FCF1B5228E58D10059E2FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7191EC0E96477C2F4D2E59A /* libPods-NYHEmptyData.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2851C63B55D9E6D8D7FAE1C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AE3470832722E0003966B4E /* libPods-NYHEmptyData.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46B61C9C2293D4F50017043D /* BaseControllers */ = {
+			isa = PBXGroup;
+			children = (
+				46B61C9D2293D5E60017043D /* NYHBaseController.h */,
+				46B61C9E2293D5E60017043D /* NYHBaseController.m */,
+				46B61CA02293D6010017043D /* NYHBaseTableController.h */,
+				46B61CA12293D6010017043D /* NYHBaseTableController.m */,
+				46B61CA62293F6020017043D /* NYHBaseTableCell.h */,
+				46B61CA72293F6020017043D /* NYHBaseTableCell.m */,
+				46B61CAE2293F9000017043D /* NYHBaseTableCell.xib */,
+				46B61CAB2293F6270017043D /* NYHBaseModel.h */,
+				46B61CAC2293F6270017043D /* NYHBaseModel.m */,
+			);
+			path = BaseControllers;
+			sourceTree = "<group>";
+		};
+		46FCF1AF228E58D10059E2FC = {
+			isa = PBXGroup;
+			children = (
+				46FCF1BA228E58D10059E2FC /* NYHEmptyData */,
+				46FCF1B9228E58D10059E2FC /* Products */,
+				53B68C61EDA3371E3DFEE427 /* Pods */,
+				2851C63B55D9E6D8D7FAE1C7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		46FCF1B9228E58D10059E2FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46FCF1B8228E58D10059E2FC /* NYHEmptyData.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46FCF1BA228E58D10059E2FC /* NYHEmptyData */ = {
+			isa = PBXGroup;
+			children = (
+				46B61C9C2293D4F50017043D /* BaseControllers */,
+				46FCF1D6228E8CD40059E2FC /* Model */,
+				46FCF1D1228E5BA40059E2FC /* EmptyDataView */,
+				46FCF1BB228E58D10059E2FC /* AppDelegate.h */,
+				46FCF1BC228E58D10059E2FC /* AppDelegate.m */,
+				46FCF1BE228E58D10059E2FC /* ViewController.h */,
+				46FCF1BF228E58D10059E2FC /* ViewController.m */,
+				46B61CA32293D80F0017043D /* NYHEmptyController.h */,
+				46B61CA42293D80F0017043D /* NYHEmptyController.m */,
+				46FCF1C1228E58D10059E2FC /* Main.storyboard */,
+				46FCF1C4228E58D30059E2FC /* Assets.xcassets */,
+				46FCF1C6228E58D30059E2FC /* LaunchScreen.storyboard */,
+				46FCF1C9228E58D30059E2FC /* Info.plist */,
+				46FCF1CA228E58D30059E2FC /* main.m */,
+				46FCF1DC228E96070059E2FC /* NYHPrefix.h */,
+			);
+			path = NYHEmptyData;
+			sourceTree = "<group>";
+		};
+		46FCF1D1228E5BA40059E2FC /* EmptyDataView */ = {
+			isa = PBXGroup;
+			children = (
+				46B61C9B22939BAC0017043D /* NYHEnum.h */,
+				46FCF1DB228E957C0059E2FC /* NYHMacro.h */,
+				46FCF1D5228E60F80059E2FC /* NYHEmptyData.h */,
+				46FCF1D2228E606A0059E2FC /* UIScrollView+NYHEmptyDataView.h */,
+				46FCF1D3228E606A0059E2FC /* UIScrollView+NYHEmptyDataView.m */,
+				46FCF1DD228EA4BB0059E2FC /* NYHEmptyView.h */,
+				46FCF1DE228EA4BB0059E2FC /* NYHEmptyView.m */,
+				46FCF1E2228EA61C0059E2FC /* NYHResource.bundle */,
+			);
+			path = EmptyDataView;
+			sourceTree = "<group>";
+		};
+		46FCF1D6228E8CD40059E2FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46FCF1D7228E8CF00059E2FC /* NYHListModel.h */,
+				46FCF1D8228E8CF00059E2FC /* NYHListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53B68C61EDA3371E3DFEE427 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECD3079A7927C0E14446D268 /* Pods-NYHEmptyData.debug.xcconfig */,
+				471466E2FAAECD8587BDA0D4 /* Pods-NYHEmptyData.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46FCF1B7228E58D10059E2FC /* NYHEmptyData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46FCF1CE228E58D30059E2FC /* Build configuration list for PBXNativeTarget "NYHEmptyData" */;
+			buildPhases = (
+				08C13EE9B813F01423BB3FE7 /* [CP] Check Pods Manifest.lock */,
+				46FCF1B4228E58D10059E2FC /* Sources */,
+				46FCF1B5228E58D10059E2FC /* Frameworks */,
+				46FCF1B6228E58D10059E2FC /* Resources */,
+				A4A96FF294792ACC76FF89D8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NYHEmptyData;
+			productName = NYHEmptyData;
+			productReference = 46FCF1B8228E58D10059E2FC /* NYHEmptyData.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46FCF1B0228E58D10059E2FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = NYH;
+				TargetAttributes = {
+					46FCF1B7228E58D10059E2FC = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 46FCF1B3228E58D10059E2FC /* Build configuration list for PBXProject "NYHEmptyData" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46FCF1AF228E58D10059E2FC;
+			productRefGroup = 46FCF1B9228E58D10059E2FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46FCF1B7228E58D10059E2FC /* NYHEmptyData */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46FCF1B6228E58D10059E2FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46FCF1C8228E58D30059E2FC /* LaunchScreen.storyboard in Resources */,
+				46FCF1E3228EA61C0059E2FC /* NYHResource.bundle in Resources */,
+				46FCF1C5228E58D30059E2FC /* Assets.xcassets in Resources */,
+				46FCF1C3228E58D10059E2FC /* Main.storyboard in Resources */,
+				46B61CAF2293F9000017043D /* NYHBaseTableCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08C13EE9B813F01423BB3FE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NYHEmptyData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4A96FF294792ACC76FF89D8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NYHEmptyData/Pods-NYHEmptyData-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NYHEmptyData/Pods-NYHEmptyData-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NYHEmptyData/Pods-NYHEmptyData-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46FCF1B4228E58D10059E2FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B61C9F2293D5E60017043D /* NYHBaseController.m in Sources */,
+				46B61CAD2293F6270017043D /* NYHBaseModel.m in Sources */,
+				46B61CA22293D6010017043D /* NYHBaseTableController.m in Sources */,
+				46FCF1DF228EA4BB0059E2FC /* NYHEmptyView.m in Sources */,
+				46FCF1D4228E606A0059E2FC /* UIScrollView+NYHEmptyDataView.m in Sources */,
+				46FCF1D9228E8CF00059E2FC /* NYHListModel.m in Sources */,
+				46B61CA92293F6020017043D /* NYHBaseTableCell.m in Sources */,
+				46FCF1C0228E58D10059E2FC /* ViewController.m in Sources */,
+				46B61CA52293D80F0017043D /* NYHEmptyController.m in Sources */,
+				46FCF1CB228E58D30059E2FC /* main.m in Sources */,
+				46FCF1BD228E58D10059E2FC /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		46FCF1C1228E58D10059E2FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46FCF1C2228E58D10059E2FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46FCF1C6228E58D30059E2FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46FCF1C7228E58D30059E2FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46FCF1CC228E58D30059E2FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		46FCF1CD228E58D30059E2FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46FCF1CF228E58D30059E2FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECD3079A7927C0E14446D268 /* Pods-NYHEmptyData.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LY57Q42L68;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NYHEmptyData/NYHPrefix.h";
+				INFOPLIST_FILE = NYHEmptyData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzz.lcloud.NYHEmptyData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46FCF1D0228E58D30059E2FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 471466E2FAAECD8587BDA0D4 /* Pods-NYHEmptyData.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LY57Q42L68;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NYHEmptyData/NYHPrefix.h";
+				INFOPLIST_FILE = NYHEmptyData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzz.lcloud.NYHEmptyData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46FCF1B3228E58D10059E2FC /* Build configuration list for PBXProject "NYHEmptyData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46FCF1CC228E58D30059E2FC /* Debug */,
+				46FCF1CD228E58D30059E2FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46FCF1CE228E58D30059E2FC /* Build configuration list for PBXNativeTarget "NYHEmptyData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46FCF1CF228E58D30059E2FC /* Debug */,
+				46FCF1D0228E58D30059E2FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46FCF1B0228E58D10059E2FC /* Project object */;
+}
