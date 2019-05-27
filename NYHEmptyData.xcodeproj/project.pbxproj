@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4604DE02229BE707004D399A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4604DE01229BE707004D399A /* README.md */; };
 		46B61C9F2293D5E60017043D /* NYHBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B61C9E2293D5E60017043D /* NYHBaseController.m */; };
 		46B61CA22293D6010017043D /* NYHBaseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B61CA12293D6010017043D /* NYHBaseTableController.m */; };
 		46B61CA52293D80F0017043D /* NYHEmptyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B61CA42293D80F0017043D /* NYHEmptyController.m */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		3AE3470832722E0003966B4E /* libPods-NYHEmptyData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NYHEmptyData.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4604DE01229BE707004D399A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		46B61C9B22939BAC0017043D /* NYHEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYHEnum.h; sourceTree = "<group>"; };
 		46B61C9D2293D5E60017043D /* NYHBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYHBaseController.h; sourceTree = "<group>"; };
 		46B61C9E2293D5E60017043D /* NYHBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYHBaseController.m; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		46FCF1AF228E58D10059E2FC = {
 			isa = PBXGroup;
 			children = (
+				4604DE01229BE707004D399A /* README.md */,
 				46FCF1BA228E58D10059E2FC /* NYHEmptyData */,
 				46FCF1B9228E58D10059E2FC /* Products */,
 				53B68C61EDA3371E3DFEE427 /* Pods */,
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4604DE02229BE707004D399A /* README.md in Resources */,
 				46FCF1C8228E58D30059E2FC /* LaunchScreen.storyboard in Resources */,
 				46FCF1E3228EA61C0059E2FC /* NYHResource.bundle in Resources */,
 				46FCF1C5228E58D30059E2FC /* Assets.xcassets in Resources */,
