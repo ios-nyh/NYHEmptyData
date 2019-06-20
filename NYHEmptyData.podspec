@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "NYHEmptyData"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "UIScrollView 容错的占位视图"
 
   # This description is used to generate tags and improve search results.
@@ -133,13 +133,7 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "MJRefresh", "~> 3.2.0"
-  # spec.dependency "MJExtension", "~> 3.0.17"
   spec.dependency "Masonry", "~> 1.1.0"
-  # spec.dependency "AFNetworking", "~> 3.2.1"
-  # spec.dependency "SDWebImage", "~> 5.0.6"
-  # spec.dependency "IQKeyboardManager", "~> 6.4.0"
-  # spec.dependency "Toast", "~> 4.0.0"
 
 
 end
