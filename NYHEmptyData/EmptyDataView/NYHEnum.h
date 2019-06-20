@@ -9,7 +9,6 @@
 #ifndef NYHEnum_h
 #define NYHEnum_h
 
-
 /**
  刷新方式
  

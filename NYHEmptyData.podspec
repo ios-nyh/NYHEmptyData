@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "NYHEmptyData"
-  spec.version      = "0.0.1"
-  spec.summary      = "容错的占位视图"
+  spec.version      = "0.0.2"
+  spec.summary      = "UIScrollView容错的占位视图"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,8 +25,8 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-                             NYHEmptyData 测试库
-                      DESC
+                             UIScrollView 容错的占位视图 (没有数据,无网络,请求错误)
+                         DESC
 
   spec.homepage     = "https://github.com/nyh1006/NYHEmptyData"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -91,7 +91,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "NYHEmptyData", "NYHEmptyData/**/*.{h,m}"
+  spec.source_files  = "NYHEmptyData/EmptyDataView/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -106,7 +106,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-  spec.resources = "NYHEmptyData/NYHEmptyDataView/NYHResource.bundle"
+  spec.resources = "NYHEmptyData/EmptyDataView/NYHResource.bundle"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -117,7 +117,7 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
-  # spec.framework  = "SomeFramework"
+  spec.framework  = "UIKit"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
   # spec.library   = "iconv"
@@ -133,7 +133,14 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  spec.dependency "MJRefresh", "~> 3.2.0"
+  spec.dependency "MJExtension", "~> 3.0.17"
   spec.dependency "Masonry", "~> 1.1.0"
+  spec.dependency "AFNetworking", "~> 3.2.1"
+  spec.dependency "SDWebImage", "~> 5.0.6"
+  spec.dependency "IQKeyboardManager", "~> 6.4.0"
+  spec.dependency "Toast", "~> 4.0.0"
+
 
 end
 
