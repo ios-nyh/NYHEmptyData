@@ -9,6 +9,8 @@
 #import "NYHBaseTableController.h"
 #import "NYHBaseTableCell.h"
 #import "NYHBaseModel.h"
+#import "MJRefresh.h"
+#import "Masonry.h"
 
 @interface NYHBaseTableController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -54,9 +56,10 @@
     self.baseTableView.estimatedSectionHeaderHeight = 0;
     self.baseTableView.estimatedSectionFooterHeight = 0;
     
-    NYHWeakSelf(self);
+    __weak typeof(self) weakSelf = self;
+    
     [self.baseTableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.left.bottom.right.equalTo(weakself.view);
+        make.top.left.bottom.right.equalTo(weakSelf.view);
     }];
 }
 
@@ -74,25 +77,27 @@
 // 上拉刷新
 - (void)addHeaderRefreshing
 {
-    NYHWeakSelf(self);
+    __weak typeof(self) weakSelf = self;
+    
     self.baseTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        weakself.pageNum = 1;
-        [weakself loadNewData];
+        weakSelf.pageNum = 1;
+        [weakSelf loadNewData];
     }];
 }
 
 // 下拉加载更多
 - (void)addFooterRefreshing
 {
-    NYHWeakSelf(self);
+    __weak typeof(self) weakSelf = self;
+    
     self.baseTableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
-        weakself.pageNum++;
-        if (weakself.pageNum <= weakself.totalPage) {
-            [weakself loadMoreData];
+        weakSelf.pageNum++;
+        if (weakSelf.pageNum <= weakSelf.totalPage) {
+            [weakSelf loadMoreData];
         }
         else {
-            [weakself.baseTableView.mj_footer endRefreshing];
-            [weakself.baseTableView.mj_footer endRefreshingWithNoMoreData];
+            [weakSelf.baseTableView.mj_footer endRefreshing];
+            [weakSelf.baseTableView.mj_footer endRefreshingWithNoMoreData];
         }
     }];
 }

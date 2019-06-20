@@ -10,6 +10,20 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ 数据加载类型
+ 
+ - NYHNoDataType: 没有数据
+ - NYHNoNetworkType: 没有网络
+ - NYHRequestErrorType: 请求失败
+ */
+typedef enum : NSInteger {
+    NYHNoDataType,
+    NYHNoNetworkType,
+    NYHRequestErrorType,
+} NYHDataType;
+
+
 typedef void(^NYHEmptyViewHandler)(NYHDataType dataType, UIButton * btn);
 
 @interface NYHEmptyView : UIView

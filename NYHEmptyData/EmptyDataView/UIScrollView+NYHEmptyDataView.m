@@ -8,6 +8,7 @@
 
 #import "UIScrollView+NYHEmptyDataView.h"
 #import <objc/runtime.h>
+#import "Masonry.h"
 
 @implementation UIScrollView (NYHEmptyDataView)
 
@@ -31,10 +32,11 @@
     self.emptyView.frame = self.bounds;
     [self addSubview:self.emptyView];
     
-    NYHWeakSelf(self);
+    __weak typeof(self) weakSelf = self;
+    
     [self.emptyView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(weakself);
-        make.width.height.equalTo(weakself);
+        make.center.equalTo(weakSelf);
+        make.width.height.equalTo(weakSelf);
     }];
 
     objc_setAssociatedObject(self, @selector(dataType), @(dataType), OBJC_ASSOCIATION_ASSIGN);

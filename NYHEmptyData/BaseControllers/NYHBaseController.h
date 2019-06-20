@@ -10,6 +10,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ 刷新方式
+ 
+ - NYHRefreshHeader: 头部刷新
+ - NYHRefreshFooter: 尾部刷新
+ */
+typedef NS_ENUM(NSInteger, NYHRefreshStatus) {
+    NYHRefreshHeader = 1,
+    NYHRefreshFooter = 2,
+};
+
+
 @interface NYHBaseController : UIViewController
 
 @property (nonatomic, strong) UIButton *leftBtn;

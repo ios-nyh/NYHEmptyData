@@ -7,6 +7,9 @@
 //
 
 #import "NYHBaseController.h"
+#import "IQKeyboardManager.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
 
 @interface NYHBaseController ()
 
@@ -44,7 +47,7 @@
     // 设置全局View背景色
     self.view.backgroundColor = [UIColor whiteColor];
     // 修改系统导航栏背景
-    [self.navigationController.navigationBar setBarTintColor:kClickableColor];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor orangeColor]];
     // 去除导航栏底部横线(官方用法)
     [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
@@ -98,7 +101,7 @@
     
     // 中间标题,默认不隐藏
     self.titleLabel = [[UILabel alloc]init];
-    self.titleLabel.frame = CGRectMake(CGRectGetMaxX(self.leftBtn.frame), 0, NYHWIDTH-self.leftBtn.mj_w-self.rightBtn.mj_w, 44);
+    self.titleLabel.frame = CGRectMake(CGRectGetMaxX(self.leftBtn.frame), 0, [UIScreen mainScreen].bounds.size.width-self.leftBtn.mj_w-self.rightBtn.mj_w, 44);
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
     self.titleLabel.font = [UIFont systemFontOfSize:18.f];
     self.titleLabel.backgroundColor = [UIColor clearColor];
@@ -157,19 +160,21 @@
                                             action:@selector(tapAnywhereToDismissKeyboard:)];
     
     NSOperationQueue *mainQuene = [NSOperationQueue mainQueue];
-    NYHWeakSelf(self);
+
+    __weak typeof(self) weakSelf = self;
+    
     [nc addObserverForName:UIKeyboardWillShowNotification
                     object:nil
                      queue:mainQuene
                 usingBlock:^(NSNotification *note){
-                    [weakself.view addGestureRecognizer:singleTapGR];
+                    [weakSelf.view addGestureRecognizer:singleTapGR];
                 }];
     
     [nc addObserverForName:UIKeyboardWillHideNotification
                     object:nil
                      queue:mainQuene
                 usingBlock:^(NSNotification *note){
-                    [weakself.view removeGestureRecognizer:singleTapGR];
+                    [weakSelf.view removeGestureRecognizer:singleTapGR];
                 }];
 }
 

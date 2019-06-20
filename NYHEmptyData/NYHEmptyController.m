@@ -7,7 +7,12 @@
 //
 
 #import "NYHEmptyController.h"
+#import "NYHBaseTableCell.h"
+#import "AFNetworking.h"
 #import "NYHListModel.h"
+#import "MJRefresh.h"
+#import "MJExtension.h"
+#import "Toast.h"
 
 @interface NYHEmptyController () 
 
@@ -48,16 +53,17 @@
     self.footerRefresh = YES;
     self.baseTableView.rowHeight = 88;
     
-    NYHWeakSelf(self);
+    __weak typeof(self) weakSelf = self;
+    
     self.refreshHandler = ^{
-        if ([weakself.baseTableView.emptyView superview]) {
-            [weakself.baseTableView.emptyView removeFromSuperview];
-            weakself.baseTableView.emptyView = nil;
+        if ([weakSelf.baseTableView.emptyView superview]) {
+            [weakSelf.baseTableView.emptyView removeFromSuperview];
+            weakSelf.baseTableView.emptyView = nil;
         }
 
-        weakself.pageSize = 10;
+        weakSelf.pageSize = 10;
         
-        [weakself requestData];
+        [weakSelf requestData];
     };
     
     
@@ -65,14 +71,14 @@
     
     
     self.baseTableView.refreshHandler = ^{
-        if ([weakself.baseTableView.emptyView superview]) {
-            [weakself.baseTableView.emptyView removeFromSuperview];
-            weakself.baseTableView.emptyView = nil;
+        if ([weakSelf.baseTableView.emptyView superview]) {
+            [weakSelf.baseTableView.emptyView removeFromSuperview];
+            weakSelf.baseTableView.emptyView = nil;
         }
         
-        weakself.pageSize = 10;
+        weakSelf.pageSize = 10;
         
-        [weakself requestData];
+        [weakSelf requestData];
     };
 }
 
@@ -112,7 +118,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NYHLog(@"%@", indexPath);
+    NSLog(@"%@", indexPath);
 }
 
 #pragma mark - 数据加载

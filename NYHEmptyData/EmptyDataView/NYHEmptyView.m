@@ -7,6 +7,7 @@
 //
 
 #import "NYHEmptyView.h"
+#import "Masonry.h"
 
 @interface NYHEmptyView ()
 
@@ -62,39 +63,39 @@ static NYHEmptyView * emptyView = nil;
     UILabel *hintLabel = [[UILabel alloc] init];
     hintLabel.text = hintContents[_dataType];
     hintLabel.textAlignment = NSTextAlignmentCenter;
-    hintLabel.font = NYHFont(15.0f);
-    hintLabel.textColor = UIColorFromRGB(0x808080);
+    hintLabel.font = [UIFont systemFontOfSize:15.0f];
+    hintLabel.textColor = [UIColor grayColor];
     [self addSubview:hintLabel];
 
     // 提示按钮
     UIButton *hintBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [hintBtn setTitle:hintBtnTitles[_dataType] forState:UIControlStateNormal];
-    [hintBtn setTitleColor:kClickableColor forState:UIControlStateNormal];
-    hintBtn.titleLabel.font = NYHFont(15.0f);
+    [hintBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+    hintBtn.titleLabel.font = [UIFont systemFontOfSize:15.0f];
     hintBtn.layer.cornerRadius = 5.0f;
     hintBtn.layer.masksToBounds = YES;
-    hintBtn.layer.borderColor = kClickableColor.CGColor;
+    hintBtn.layer.borderColor = [UIColor grayColor].CGColor;
     hintBtn.layer.borderWidth = 1.0f;
     [hintBtn addTarget:self action:@selector(hintBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:hintBtn];
     
     // 添加约束
-    NYHWeakSelf(self);
-    
+    __weak typeof(self) weakSelf = self;
+
     [hintImgView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(weakself);
-        make.centerY.equalTo(weakself).offset(-100);
+        make.centerX.equalTo(weakSelf);
+        make.centerY.equalTo(weakSelf).offset(-100);
     }];
     
     [hintLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(weakself);
+        make.centerX.equalTo(weakSelf);
         make.top.equalTo(hintImgView.mas_bottom).offset(20);
     }];
 
     [hintBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(120);
         make.height.mas_equalTo(40);
-        make.centerX.equalTo(weakself);
+        make.centerX.equalTo(weakSelf);
         make.top.equalTo(hintLabel.mas_bottom).offset(30);
     }];
 }
@@ -120,12 +121,12 @@ static NYHEmptyView * emptyView = nil;
         self.emptyViewHandler(_dataType, btn);
     }
     
-    NYHLog(@"%ld - %@", _dataType, btn);
+    NSLog(@"%ld - %@", _dataType, btn);
 }
 
 - (void)dealloc
 {
-    NYHLog(@"销毁了:%s", __FUNCTION__);
+    NSLog(@"销毁了:%s", __FUNCTION__);
 }
 
 @end

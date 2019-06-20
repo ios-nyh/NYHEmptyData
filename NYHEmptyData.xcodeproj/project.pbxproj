@@ -28,7 +28,6 @@
 
 /* Begin PBXFileReference section */
 		3AE3470832722E0003966B4E /* libPods-NYHEmptyData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NYHEmptyData.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		46B61C9B22939BAC0017043D /* NYHEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYHEnum.h; sourceTree = "<group>"; };
 		46B61C9D2293D5E60017043D /* NYHBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYHBaseController.h; sourceTree = "<group>"; };
 		46B61C9E2293D5E60017043D /* NYHBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYHBaseController.m; sourceTree = "<group>"; };
 		46B61CA02293D6010017043D /* NYHBaseTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYHBaseTableController.h; sourceTree = "<group>"; };
@@ -55,7 +54,6 @@
 		46FCF1D5228E60F80059E2FC /* NYHEmptyData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYHEmptyData.h; sourceTree = "<group>"; };
 		46FCF1D7228E8CF00059E2FC /* NYHListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYHListModel.h; sourceTree = "<group>"; };
 		46FCF1D8228E8CF00059E2FC /* NYHListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYHListModel.m; sourceTree = "<group>"; };
-		46FCF1DB228E957C0059E2FC /* NYHMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYHMacro.h; sourceTree = "<group>"; };
 		46FCF1DC228E96070059E2FC /* NYHPrefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYHPrefix.h; sourceTree = "<group>"; };
 		46FCF1DD228EA4BB0059E2FC /* NYHEmptyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYHEmptyView.h; sourceTree = "<group>"; };
 		46FCF1DE228EA4BB0059E2FC /* NYHEmptyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYHEmptyView.m; sourceTree = "<group>"; };
@@ -144,12 +142,10 @@
 			isa = PBXGroup;
 			children = (
 				46FCF1D5228E60F80059E2FC /* NYHEmptyData.h */,
-				46B61C9B22939BAC0017043D /* NYHEnum.h */,
-				46FCF1DB228E957C0059E2FC /* NYHMacro.h */,
-				46FCF1D2228E606A0059E2FC /* UIScrollView+NYHEmptyDataView.h */,
-				46FCF1D3228E606A0059E2FC /* UIScrollView+NYHEmptyDataView.m */,
 				46FCF1DD228EA4BB0059E2FC /* NYHEmptyView.h */,
 				46FCF1DE228EA4BB0059E2FC /* NYHEmptyView.m */,
+				46FCF1D2228E606A0059E2FC /* UIScrollView+NYHEmptyDataView.h */,
+				46FCF1D3228E606A0059E2FC /* UIScrollView+NYHEmptyDataView.m */,
 				46FCF1E2228EA61C0059E2FC /* NYHResource.bundle */,
 			);
 			path = EmptyDataView;
